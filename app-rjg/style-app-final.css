@@ -1,0 +1,113 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2A2B2A; 
+    background-size: cover;
+    text-align: center;
+}
+
+.container {
+    color: #2A2B2A; 
+    padding: 30px;
+    background-color: #C6DDF0;
+    border-radius: 15px;
+    max-width: 800px;
+    width: 90%;
+    min-height: 300px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, #5E4955, #996888, #C99DA3);
+}
+
+.heading {
+    font-size: 48px;
+    margin-bottom: 30px;
+    color: #5E4955; 
+    font-weight: 700;
+}
+
+select {
+    padding: 12px 20px;
+    border: 2px solid #996888; 
+    border-radius: 10px;
+    font-size: 16px;
+    margin-bottom: 25px;
+    background-color: white;
+    color: #2A2B2A;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 200px;
+}
+
+select:focus {
+    outline: none;
+    border-color: #5E4955;
+    box-shadow: 0 0 0 2px rgba(94, 73, 85, 0.2);
+}
+
+button {
+    background-color: #996888; 
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(153, 104, 136, 0.3);
+}
+
+button:hover {
+    background-color: #5E4955; 
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(94, 73, 85, 0.4);
+}
+
+button:active {
+    transform: translateY(1px) scale(0.98);
+    box-shadow: 0 2px 8px rgba(94, 73, 85, 0.4);
+}
+
+.waiting-message {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin-top: 20px;
+    background-color: #5E4955; 
+    border-radius: 8px;
+    padding: 12px 20px;
+    display: none;
+}
+
+#joke-output {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 30px;
+    color: #2A2B2A;
+    padding: 20px;
+    background-color: rgba(201, 157, 163, 0.15); 
+    border-radius: 10px;
+    border-left: 4px solid #C99DA3;
+    text-align: left;
+    width: 85%;
+}
